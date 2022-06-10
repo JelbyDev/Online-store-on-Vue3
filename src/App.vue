@@ -1,18 +1,31 @@
 <template>
   <Header></Header>
-  <Main></Main>
+  <Main class="home-page">
+    <Banner></Banner>
+    <section class="home-page__best-products">
+      <div class="content-wrapper">Блок с товарами</div>
+    </section>
+    <section class="home-page__seo">
+      <div class="content-wrapper">
+        <h1>SEO text</h1>
+        <p>SEO текст тестовая часть</p>
+      </div>
+    </section>
+  </Main>
   <Footer></Footer>
 </template>
 
 <script>
-import Header from "@/components/layout/Header";
-import Main from "@/components/layout/Main";
-import Footer from "@/components/layout/Footer.vue";
-
 import styles from "@/css/reset.module.css";
 
+import Header from "@/components/common/Header";
+import Main from "@/components/common/Main";
+import Footer from "@/components/common/Footer.vue";
+
+import Banner from "@/components/Banner.vue";
+
 export default {
-  components: { Header, Main, Footer },
+  components: { Header, Main, Footer, Banner },
   data() {
     return {};
   },
@@ -33,6 +46,6 @@ body {
 .content-wrapper {
   width: 1280px;
   margin: 0 auto;
-  display: flex;
+  padding: 0 13px;
 }
 </style>

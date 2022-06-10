@@ -1,5 +1,7 @@
 <template>
-  <main class="main">Основная часть сайта</main>
+  <main class="main">
+    <slot></slot>
+  </main>
 </template>
 
 <script>
@@ -9,6 +11,5 @@ export default {};
 <style scoped>
 .main {
   flex: 1;
-  background: green;
 }
 </style>
