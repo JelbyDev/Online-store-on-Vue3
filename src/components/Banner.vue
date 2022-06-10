@@ -47,7 +47,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 export default {
-  name: "Banner",
   components: {
     Swiper,
     SwiperSlide,

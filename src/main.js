@@ -1,11 +1,19 @@
 import { createApp } from "vue";
 import App from "./App.vue";
+import components from "@/components/export";
+
 //import router from './router'
 //import store from './store'
 
-const createdApp = createApp(App);
+import styles from "@/css/reset.module.css";
 
-createdApp
+const app = createApp(App);
+
+components.forEach((component) => {
+  app.component(component.name, component);
+});
+
+app
   //.use(store)
   //.use(router)
   .mount("#app");

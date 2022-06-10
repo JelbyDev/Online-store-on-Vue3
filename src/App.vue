@@ -1,31 +1,34 @@
 <template>
-  <Header></Header>
-  <Main class="home-page">
-    <Banner></Banner>
-    <section class="home-page__best-products">
-      <div class="content-wrapper">Блок с товарами</div>
-    </section>
+  <header-website></header-website>
+  <main-website class="home-page">
+    <banner></banner>
+    <goods-products class="home-page__best-products"></goods-products>
     <section class="home-page__seo">
       <div class="content-wrapper">
         <h1>SEO text</h1>
         <p>SEO текст тестовая часть</p>
       </div>
     </section>
-  </Main>
-  <Footer></Footer>
+  </main-website>
+  <footer-website></footer-website>
 </template>
 
 <script>
-import styles from "@/css/reset.module.css";
-
 import Header from "@/components/common/Header";
 import Main from "@/components/common/Main";
 import Footer from "@/components/common/Footer.vue";
 
 import Banner from "@/components/Banner.vue";
+import GoodsProducts from "@/components/GoodsProducts.vue";
 
 export default {
-  components: { Header, Main, Footer, Banner },
+  components: {
+    "header-website": Header,
+    "main-website": Main,
+    "footer-website": Footer,
+    banner: Banner,
+    "goods-products": GoodsProducts,
+  },
   data() {
     return {};
   },
