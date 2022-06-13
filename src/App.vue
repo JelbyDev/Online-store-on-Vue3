@@ -1,7 +1,7 @@
 <template>
-  <header-website></header-website>
-  <main-website class="home-page">
-    <banner></banner>
+  <app-header></app-header>
+  <app-main class="home-page">
+    <home-banner></home-banner>
     <goods-products class="home-page__best-products"></goods-products>
     <section class="home-page__seo">
       <div class="content-wrapper">
@@ -9,24 +9,24 @@
         <p>SEO текст тестовая часть</p>
       </div>
     </section>
-  </main-website>
-  <footer-website></footer-website>
+  </app-main>
+  <app-footer></app-footer>
 </template>
 
 <script>
-import Header from "@/components/common/Header";
-import Main from "@/components/common/Main";
-import Footer from "@/components/common/Footer.vue";
+import AppHeader from "@/components/AppHeader";
+import AppMain from "@/components/AppMain";
+import AppFooter from "@/components/AppFooter.vue";
 
-import Banner from "@/components/Banner.vue";
-import GoodsProducts from "@/components/GoodsProducts.vue";
+import HomeBanner from "@/components/HomeBanner.vue";
+import GoodsProducts from "@/components/HomeGoodsProducts.vue";
 
 export default {
   components: {
-    "header-website": Header,
-    "main-website": Main,
-    "footer-website": Footer,
-    banner: Banner,
+    "app-header": AppHeader,
+    "app-main": AppMain,
+    "app-footer": AppFooter,
+    "home-banner": HomeBanner,
     "goods-products": GoodsProducts,
   },
   data() {
