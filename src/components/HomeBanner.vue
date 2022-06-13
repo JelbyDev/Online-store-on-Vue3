@@ -1,6 +1,6 @@
 <template>
   <section class="home-page__banner banner">
-    <div class="content-wrapper">
+    <div class="app-content-wrapper">
       <swiper
         :modules="modules"
         :slides-per-view="1"

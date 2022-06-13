@@ -1,3 +1,4 @@
-import ProductItem from "@/components/ProductItem";
+import ProductList from "@/components/ProductList";
+import ProductListItem from "@/components/ProductListItem";
 
-export default [ProductItem];
+export default [ProductList, ProductListItem];

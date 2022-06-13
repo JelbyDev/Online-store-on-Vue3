@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <div class="content-wrapper">Подвал сайта</div>
+    <div class="app-content-wrapper">Подвал сайта</div>
   </footer>
 </template>
 

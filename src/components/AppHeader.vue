@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <div class="header__wrapper content-wrapper">
+    <div class="header__wrapper app-content-wrapper">
       <img class="header__logo" src="@/assets/logo.svg" alt="Логотип сайта" />
       <div class="search">
         <input type="text" placeholder="Поиск по сайту..." />
